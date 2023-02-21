@@ -1,0 +1,12 @@
+node_modules/
+build/
+dist/
+**/*.min.js
+**/*-min.js
+**/*.bundle.js
+webpack.config.js
+translationKeys.js
+mock/
+scripts/
+__tests__/
+src/__tests__/

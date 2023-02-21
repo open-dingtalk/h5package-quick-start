@@ -1,0 +1,82 @@
+{
+  "name": "h5package-quick-start",
+  "version": "0.2.0",
+  "description": "H5离线包快速接入示例",
+  "author": "",
+  "scripts": {
+    "start": "npm run dev && npm run lint",
+    "dev": "webpack serve --mode=development",
+    "build": "webpack --mode=production --progress",
+    "lint": "eslint src --fix --ext .ts,.tsx ",
+    "f2elint-scan": "f2elint scan",
+    "f2elint-fix": "f2elint fix",
+    "deploy-h5package": "npx run build && npx h5package packAndDeploy",
+    "pack-h5package": "npx run build && npx h5package pack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:open-dingtalk/h5package-quick-start.git"
+  },
+  "devDependencies": {
+    "@ant-design/cssinjs": "^1.4.0",
+    "@babel/core": "^7.20.12",
+    "@babel/plugin-transform-runtime": "^7.19.6",
+    "@babel/preset-env": "^7.20.2",
+    "@babel/preset-react": "^7.18.6",
+    "@babel/preset-typescript": "^7.18.6",
+    "@types/react": "^18.0.27",
+    "@types/react-dom": "^18.0.10",
+    "@typescript-eslint/eslint-plugin": "^5.49.0",
+    "@typescript-eslint/parser": "^5.49.0",
+    "autoprefixer": "^10.4.13",
+    "babel-loader": "^9.1.2",
+    "clean-webpack-plugin": "^4.0.0",
+    "copy-webpack-plugin": "11.0.0",
+    "css-loader": "^6.7.3",
+    "css-minimizer-webpack-plugin": "^4.2.2",
+    "dingtalk-h5package-opensdk": "^2.0.9",
+    "eslint": "^8.33.0",
+    "eslint-config-ali": "^14.0.2",
+    "eslint-import-resolver-typescript": "^3.5.3",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-webpack-plugin": "^4.0.0",
+    "f2elint": "0.4.4",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "mini-css-extract-plugin": "^2.7.2",
+    "portfinder-sync": "^0.0.2",
+    "postcss": "^8.4.21",
+    "postcss-import": "^15.1.0",
+    "postcss-loader": "^7.0.2",
+    "style-loader": "^3.3.1",
+    "tailwindcss": "^3.2.4",
+    "typescript": "^4.9.4",
+    "url-loader": "^4.1.1",
+    "webpack": "^5.75.0",
+    "webpack-cli": "^5.0.1",
+    "webpack-dev-server": "^4.11.1"
+  },
+  "dependencies": {
+    "antd": "^5.0.7",
+    "axios": "^1.2.1",
+    "dayjs": "^1.11.7",
+    "dingtalk-jsapi": "^3.0.12",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router": "^6.6.2",
+    "react-router-dom": "^6.6.2"
+  },
+  "lint-staged": {
+    "src/**/*.{js,jsx,ts,tsx}": "f2elint exec eslint"
+  },
+  "browserslist": [
+    "iOS >= 7",
+    "Android >= 4",
+    "ChromeAndroid >= 40",
+    "UCAndroid >= 11",
+    "Chrome >= 40"
+  ],
+  "engines": {
+    "node": ">=14"
+  }
+}
