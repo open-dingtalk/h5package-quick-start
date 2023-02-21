@@ -1,6 +1,7 @@
 # h5package-quick-start
 
-钉钉H5离线包快速示例。本项目包含一些常见的弱网离线场景可以使用的能力示例。并且使用 ![dingtalk-h5package-opensdk](https://www.npmjs.com/package/dingtalk-h5package-opensdk) 进行离线包打包和上传操作
+钉钉H5离线包快速示例。
+本项目包含一些常见的弱网离线场景可以使用的能力示例。并且使用 [dingtalk-h5package-opensdk](https://www.npmjs.com/package/dingtalk-h5package-opensdk) 进行离线包打包和上传操作。
 
 
 ## 初始化项目
@@ -8,7 +9,6 @@
 ```javascript
 
 npm install
-
 ```
 
 ## 启动项目
@@ -35,7 +35,6 @@ npm start
 ```javascript
 
 npm run pack-h5package
-
 ```
 
 ### 打包&&上传
@@ -45,7 +44,6 @@ npm run pack-h5package
 ```javascript
 
 npm run deploy-h5package
-
 ```
 
 
