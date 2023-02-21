@@ -23,8 +23,7 @@ npm start
 
 在离线包配置文件 ```localresource.json``` 中，输入 ```miniAppId```、```accessToken```。获取方式分别如下：
 
-***miniAppId***: 即离线包ID。在开发者后台***应用详情***--***版本管理与发布***--***离线包面板*** 中获取。
-***accessToken***: 即在开发者后台首页右上角 ***API Token***，通过 ```dingtalk-h5package-opensdk``` 上传离线包时，需要此token。
+***miniAppId***: 离线包ID。在开发者后台***应用详情***--***版本管理与发布***--***离线包面板*** 中获取。
 
 
 ### 本地打包
@@ -39,7 +38,11 @@ npm run pack-h5package
 
 ### 打包&&上传
 
-执行以下命令，自动打包并上传离线包。本命令依赖 localresource.json 中的 miniAppId、accessToken。
+执行以下命令，自动打包并上传离线包。
+***注意***：上传动作会调用开放平台OpenApi，在使用前需要在 localresource.json 中正确的配置 miniAppId、accessToken，获取方式如下：
+***miniAppId***: 离线包ID。在开发者后台“***应用详情***”--“***版本管理与发布***”--“***离线包面板***” 中获取。
+***accessToken***: 访问OpenApi时依赖的鉴权accessToken。获取方式参考：[Api Token](https://open.dingtalk.com/document/orgapp/used-to-obtain-the-application-authorization-without-api-token)。
+
 
 ```javascript
 
