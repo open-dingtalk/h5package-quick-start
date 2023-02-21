@@ -1,6 +1,5 @@
 {
   "miniAppId": "离线包ID",
-  "accessToken": "开放平台网关ApiToken",
   "assets": {
     "https://n.dingtalk.com/dingding/offline-demo-H5": "./dist"
   },
