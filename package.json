@@ -10,8 +10,8 @@
     "lint": "eslint src --fix --ext .ts,.tsx ",
     "f2elint-scan": "f2elint scan",
     "f2elint-fix": "f2elint fix",
-    "deploy-h5package": "npx h5package packAndDeploy",
-    "pack-h5package": "npx h5package pack"
+    "deploy-h5package": "npx run build && npx h5package packAndDeploy",
+    "pack-h5package": "npx run build && npx h5package pack"
   },
   "repository": {
     "type": "git",
@@ -76,11 +76,7 @@
     "UCAndroid >= 11",
     "Chrome >= 40"
   ],
-  "tnpm": {
-    "mode": "npm",
-    "lockfile": "enable"
-  },
   "engines": {
-    "install-node": "14"
+    "node": ">=14"
   }
 }
