@@ -1,0 +1,11 @@
+{
+  "miniAppId": "离线包ID",
+  "accessToken": "开放平台网关ApiToken",
+  "assets": {
+    "https://n.dingtalk.com/dingding/offline-demo-H5": "./dist"
+  },
+  "externalAssets": [
+    "https://g.alicdn.com/code/lib/react/18.2.0/umd/react.production.min.js",
+    "https://g.alicdn.com/code/lib/react-dom/18.2.0/umd/react-dom.production.min.js"
+  ]
+}
