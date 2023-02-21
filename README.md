@@ -71,15 +71,7 @@ npm run deploy-h5package
 │   └── utils // 项目级基础工具函数
 ├── tailwind.config.js
 ├── tsconfig.json
-├── webpack
-│   ├── config
-│   │   ├── webpack.base.config.js // 基础配置, 包含 babel、plugins 等
-│   │   ├── webpack.dev.config.js // 开发环境配置, 如 devServer、mock
-│   │   └── webpack.prod.config.js // 打包配置, 主要用于读取 DEF 构建环境
-│   └── utils
-│       ├── getPublicPath.js // 获取 DEF 构建 publicPath
-│       ├── pageList.js // 工程页面列表
-│       └── rootPath.js // 获取目前相对路径
+├── webpack.config.js // webpack打包配置
 
 
 ```
